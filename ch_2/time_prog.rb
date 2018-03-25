@@ -1,4 +1,4 @@
-# Learn To Program - Chris Pine - Ch.1 exercises
+# Learn To Program - Chris Pine - Ch.2 exercises
 
 # How many hours are in a year?
 hours_in_day = 24

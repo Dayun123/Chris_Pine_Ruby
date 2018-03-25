@@ -1,4 +1,4 @@
-# Learn To Program - Chris Pine - Ch.1 exercises
+# Learn To Program - Chris Pine - Ch.2 exercises
 
 # The author is 1,160,000,000 seconds old, how old is this in years?
 
