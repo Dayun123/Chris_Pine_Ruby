@@ -60,4 +60,38 @@ puts line.ljust(amount_padding)
 puts line.rjust(amount_padding)
 puts line.center(amount_padding)
 
+# ************************* 6.4: More Arithmetic ************************* #
+
+# In addition to +, -, *, and /, we also have the exponientiation operator, **, and the modulus operator, %.
+
+puts 5**2   # => 25
+puts 4**0.5 # => 2.0, when used with a number less than one, ** is the same as taking the root
+puts 7 / 3  # => 2, integer division yields an integer result, rounded down.
+puts 7 % 3  # => 1, modulus gives the remainder after division
+
+# .abs returns the absolute value of the number
+
+puts (2 - 5).abs # => 3
+puts (5 - 2).abs # => 3
+
+# ********************** 6.5: Random Numbers *************************** #
+
+# Ruby comes with a random number generator, rand, that when called with no arguments gives you number between 0 and 1 exclusive, and when called with a number such as rand(n), gives you a number between 0 and n-1.
+
+puts rand
+puts rand(1)    # => always returns 0, because gives you an integer between 0 and 1 - 1 (0)
+puts rand(101)  # => correct way to get a number between 0-100, because 0 and 101-1 range is 0-100.
+
+# rand can return the same seemingly random numbers on each run, if you seed it with the same number each time with a call to srand.
+
+srand 2000
+puts rand(23) # => 22
+puts rand(45) # => 8
+puts rand(74) # => 54
+puts
+srand 2000
+puts rand(23) # => 22
+puts rand(45) # => 8
+puts rand(74) # => 54
+
 
